@@ -161,10 +161,10 @@
     align-content: center;
   }
 
-
   .project-main {
     max-width: 150%;
     max-height: auto;
+    align-items: left;
   }
 
   .project-sub {
