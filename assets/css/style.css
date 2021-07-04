@@ -31,8 +31,6 @@
     flex-flow: column wrap;
     align-items: center;
     text-shadow: 0 0 10px rgba(0, 0, 0, 1);
-    position: -webkit-sticky;
-    position: sticky;
     top: 0;
     z-index: 9999;
   }
@@ -83,39 +81,38 @@
 
   /* HEADER / NAVBAR STYLES END */
   
-  
-  
-  /* FOOTER STYLES START */
-  footer {
-    background: var(--primary-color);
-    padding: 40px 35px;
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    width: 100%;
-  }
-  
-  footer h2 {
-    color: var(--secondary-color);
-    font-size: 30px;
-    margin: 0;
-  }
-  
-  footer div {
-    line-height: 1.5;
-    text-align: right;
-  }
-  
-  footer a {
-    color: var(--secondary-color);
-  }
-  /* END FOOTER STYLES */
+
   
   /* STYLE ALL SECTION TAGS */
   section {
     padding: 60px;
   }
   
+
+  /* SIDEBAR STYLES START */
+
+  .sidebar {
+    display: flex;
+    height: 100%;
+    width: 160px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: var(--tertiary-color);
+    background-image: url(../images/sidebar-path2.jpg);
+    background-size: cover;
+    background-position:  left;
+    background-attachment: fixed;
+    overflow-x: hidden;
+    padding-top: 16px;
+  }
+
+  .aside {
+    flex-direction: column;
+  }
+
+  /* SIDEBAR STYLES END */
   
   
   
@@ -139,9 +136,9 @@
   }
   /* SECTION TITLE STYLES END */
   
-  /* WHAT WE DO STYLES */
+  /* ABOUT STYLES */
 
-  .intro {
+  .about {
     background: var(--primary-color);
     background-image: url('../images/body-trees.jpg');
     background-size: cover;
@@ -151,7 +148,7 @@
     padding: 20px 35px;
   }
   
-  .intro p {
+  .about p {
     line-height: 1.7;
     color: var(--tertiary-color);
     width: 80%;
@@ -159,7 +156,7 @@
     font-size: 20px;
     text-align: center;
   }
-  /* WHAT YOU DO STYLES END */
+  /* ABOUT END */
   
   
   /* PROJECTS STYLES START */
@@ -267,7 +264,7 @@
   }
   /* TRAINER STYLES END */
   
-  /* REACH OUT STYLES START */
+  /* CONTACT STYLES START */
   .contact {
     background: var(--secondary-color);
     background: var(--primary-color);
@@ -289,72 +286,34 @@
     flex-wrap: wrap;
   }
   
-  .contact-info > * {
-    flex: 1;
-    margin: 15px;
-  }
+  /* CONSTAT STYLES END */
   
-  .contact-info iframe {
-    height: 400px;
-  }
-  
-  .contact-info div {
-    color: white;
-  }
-  
-  .contact-info h3 {
-    color: var(--primary-color);
-    font-size: 32px;
-  }
-  
-  .contact-info p, .contact-info address {
-    margin: 20px 0;
-    line-height: 1.5;
-    font-size: 16px;
-    font-style: normal;
-  }
-  
-  .contact-form input, .contact-form textarea {
-    border: 1px solid var(--secondary-color);
-    display: block;
-    padding: 7px 15px;
-    font-size: 16px;
-    color: var(--secondary-color);
-    width: 100%;
-    margin-bottom: 15px;
-    margin-top: 5px;
-    border-radius: 10px;
-    background-color: rgba(255, 255, 255, 0.75);
-   
-  }
-
-  .contact-form input:focus, .contact-form textarea:focus {
-      background-color: rgba(255, 255, 255, 1);
-      outline: none;
-  }
-  
-  .contact-form button {
-    width: 100%;
-    border: none;
+  /* FOOTER STYLES START */
+  footer {
     background: var(--primary-color);
+    padding: 40px 35px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+  
+  footer h2 {
     color: var(--secondary-color);
-    text-align: center;
-    padding: 15px 0;
-    font-size: 16px;
-    border-radius: 10px;
+    font-size: 30px;
+    margin: 0;
   }
   
-  .contact-form button:hover {
-      color: var(--primary-color);
-      background: var(--tertiary-color);
+  footer div {
+    line-height: 1.5;
+    text-align: right;
   }
+  
+  footer a {
+    color: var(--secondary-color);
+  }
+  /* END FOOTER STYLES */
 
-  .contact-info a {
-    color: var(--primary-color);
-  }
-  
-  
-  /* REACH OUT STYLES END */
   
   /* UTILITIES */
   .text-left {
@@ -458,7 +417,7 @@
         width: 95%;
     }
 
-    .intro p {
+    .about p {
         width: 100%;
     }
 
