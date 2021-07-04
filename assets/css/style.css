@@ -7,7 +7,7 @@
 :root {
     --primary-color: #145A8F;
     --secondary-color: #3B96DB;
-    --tertiary-color: #8D8F1F;
+    --tertiary-color: #D8DB25;
 }
 
   body {
@@ -144,19 +144,33 @@
     background-attachment: fixed;
     background-position: 80%;
     padding: 20px 35px;
+    flex-direction: column;
+    align-items: center;
   }
   
   .project {
     margin: 50px auto;
     padding-bottom: 50px;
-    width: 25%;
-    height: 25%;
-    display: flex;
+    width: 50%;
+    height: 50%;
     flex-direction: column;
-    justify-content: space-around;
+    display: flex;
     border-bottom: 1px solid var(--tertiary-color);
+    flex-direction: column;
+    justify-content: space-between;
+    align-content: center;
   }
 
+
+  .project-main {
+    max-width: 150%;
+    max-height: auto;
+  }
+
+  .project-sub {
+    max-width: 100%;
+    max-height: auto;
+  }
   
   .projects h3 {
     color: var(--secondary-color);
