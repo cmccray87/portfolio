@@ -144,42 +144,57 @@
     background-attachment: fixed;
     background-position: 80%;
     padding: 20px 35px;
-    flex-flow: column wrap;
-    align-items: center;
+    flex-direction: column;
   }
   
   .project {
-    margin: 50px auto;
+    display: flex;
+    padding-top: 50px;
     padding-bottom: 50px;
     width: 50%;
     height: 50%;
-    display: flex;
-    flex-flow: column wrap;
+    flex-direction: column;
     border-bottom: 1px solid var(--tertiary-color);
-    justify-content: space-between;
-    align-items: center;
+    justify-content: center;
+
+  }
+
+
+  .project:last-child {
+    border-bottom: none;
   }
 
   .project-main {
     display: flex;
     max-width: 150%;
     max-height: auto;
-    justify-content: space-between;
-    flex-flow: column wrap;
+    flex-direction: column;
+    border-radius: 15px;
+    background-color: var(--primary-color);
+    
+  }
+
+  .project-main:hover {
+    opacity: 0.9;
   }
 
   .project-sub {
     display: flex;
     max-width: 75%;
     max-height: auto;
-    justify-content: space-between;
-    flex-flow: column wrap;
+    flex-direction: column;
+    border-radius: 15px;
+    
+  }
+
+  .project-sub:hover {
+    opacity: 0.9;
   }
 
   .project-text {
     display: flex;
-    align-content: center;
-    flex-flow: column wrap;
+    flex-direction: column;
+ 
   }
   
 
@@ -277,21 +292,10 @@
         font-size: 20px;
     }
 
-    .hero-cta, .hero-form {
-        width: 100%;
-    }
-
-    .hero-cta {
-        text-align: center;
-    }
-
     .section-title {
         width: 80%;
     }
 
-    .contact-info iframe {
-        flex: 1 100%;
-    }
 
     footer h2, footer div {
         text-align: center;
@@ -305,35 +309,10 @@
         padding: 30px 15px;
     }
 
-    .step h3 {
-        flex: 1 100%;
-        text-align: center;
-    }
-
-    .step-info {
-        flex: 2 100%;
-        text-align: center;
-        justify-content: center;
-    }
-
-    .step-img {
-        flex: 0 32%;
-        margin-right: 0;
-        margin-top: 15px;
-        margin-bottom: 15px;
-    }
-
-    .step-text {
-        flex: 100%;
-    }
-    
   }
 
   /* MEDIA QUERY FOR MOBILE PHONES AND SMALLER */
   @media screen and (max-width: 575px) {
-    .hero-form button {
-        width: 100%;
-    }
 
     .section-title {
         width: 95%;
@@ -351,7 +330,4 @@
         flex: 0 100%;
     }
 
-    .contact-form {
-        order: 3;
-    }
 }
