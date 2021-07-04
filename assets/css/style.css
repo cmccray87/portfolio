@@ -144,7 +144,7 @@
     background-attachment: fixed;
     background-position: 80%;
     padding: 20px 35px;
-    flex-direction: column;
+    flex-flow: column wrap;
     align-items: center;
   }
   
@@ -153,31 +153,34 @@
     padding-bottom: 50px;
     width: 50%;
     height: 50%;
-    flex-direction: column;
     display: flex;
+    flex-flow: column wrap;
     border-bottom: 1px solid var(--tertiary-color);
-    flex-direction: column;
     justify-content: space-between;
-    align-content: center;
+    align-items: center;
   }
 
   .project-main {
+    display: flex;
     max-width: 150%;
     max-height: auto;
-    align-items: left;
+    justify-content: space-between;
+    flex-flow: column wrap;
   }
 
   .project-sub {
-    max-width: 100%;
+    display: flex;
+    max-width: 75%;
     max-height: auto;
+    justify-content: space-between;
+    flex-flow: column wrap;
   }
-  
-  .projects h3 {
-    color: var(--secondary-color);
-    font-size: 46px;
-    flex: 1 30%;
+
+  .project-text {
+    display: flex;
+    align-content: center;
+    flex-flow: column wrap;
   }
-  
   
 
   
@@ -194,6 +197,8 @@
     background-attachment: fixed;
     background-position: 80%;
     padding: 20px 35px;
+    display: flex;
+    flex-direction: column;
   }
   
   .contact h2 {
@@ -203,6 +208,7 @@
   .contact-info {
     display: flex;
     justify-content: space-between;
+    flex-direction: row;
     flex-wrap: wrap;
   }
   
