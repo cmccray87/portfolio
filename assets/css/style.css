@@ -89,31 +89,6 @@
   }
   
 
-  /* SIDEBAR STYLES START */
-
-  .sidebar {
-    display: flex;
-    height: 100%;
-    width: 160px;
-    position: fixed;
-    z-index: 1;
-    top: 0;
-    left: 0;
-    background-color: var(--tertiary-color);
-    background-image: url(../images/sidebar-path2.jpg);
-    background-size: cover;
-    background-position:  left;
-    background-attachment: fixed;
-    overflow-x: hidden;
-    padding-top: 16px;
-  }
-
-  .aside {
-    flex-direction: column;
-  }
-
-  /* SIDEBAR STYLES END */
-  
   
   
   /* SECTION TITLE STYLES START */
@@ -160,7 +135,8 @@
   
   
   /* PROJECTS STYLES START */
-  .steps { 
+  .projects { 
+    display: flex;
     background: var(--primary-color);
     background-image: url('../images/body-trees2.jpg');
     background-size: cover;
@@ -170,99 +146,29 @@
     padding: 20px 35px;
   }
   
-  .step {
+  .project {
     margin: 50px auto;
     padding-bottom: 50px;
-    width: 80%;
+    width: 25%;
+    height: 25%;
     display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-between;
+    flex-direction: column;
+    justify-content: space-around;
     border-bottom: 1px solid var(--tertiary-color);
   }
 
-  .step:last-child {
-    border-bottom: none;
-  }
   
-  .step h3 {
+  .projects h3 {
     color: var(--secondary-color);
     font-size: 46px;
     flex: 1 30%;
   }
   
-  .step-info {
-    flex: 2 70%;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-  }
   
-  .step-img {
-    flex: 1 12%;
-    margin-right: 20px;
-  }
+
   
-  .step-img img {
-    max-width: 100%;
-  }
-  
-  .step-text {
-    flex: 12;
-  }
-  
-  .step-text p {
-    color: var(--tertiary-color);
-    font-size: 18px;
-  }
-  
-  .step-text h4 {
-    font-size: 26px;
-    line-height: 1.5;
-    color: var(--secondary-color);
-  }
-  
-  /* WHAT YOU DO STYLES END */
-  
-  /* MEET THE TRAINERS START */
-  .trainers {
-    width: 100%;
-    margin: 0 auto;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-  }
-  
-  .trainer {
-    margin: 20px;
-    flex: 1;
-    background: var(--secondary-color);
-    color: var(--primary-color);
-  }
-  
-  .trainer img {
-    width: 100%;
-  }
-  
-  .trainer-bio {
-    padding: 25px;
-    line-height: 1.3;
-  }
-  
-  .trainer-bio h3 {
-    font-size: 28px;
-  }
-  
-  .trainer-bio h4 {
-    font-weight: lighter;
-    font-size: 22px;
-    margin-bottom: 15px;
-  }
-  
-  .trainer-bio p {
-    font-size: 17px;
-  }
-  /* TRAINER STYLES END */
+  /* PROJECT STYLES END */
+
   
   /* CONTACT STYLES START */
   .contact {
@@ -363,10 +269,6 @@
         width: 80%;
     }
 
-    .trainer {
-        flex: 0 70%;
-    }
-
     .contact-info iframe {
         flex: 1 100%;
     }
@@ -419,10 +321,6 @@
 
     .about p {
         width: 100%;
-    }
-
-    .trainer {
-        flex: 0 100%;
     }
     
     .contact-info {
